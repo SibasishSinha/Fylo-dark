@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(218, 28%, 13%);
+    font-family: 'Open Sans', sans-serif;  
+}
+h1, h2, button, .header li{
+    font-family: 'Raleway', sans-serif;
+}
+.header{
+    background: hsl(217, 28%, 15%);
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    padding: 30px;
+}
+ul {
+    display: flex;
+    padding: 20px;
+}
+li{
+    padding: 20px;
+    list-style: none;
+    color: aliceblue;
+}
+li:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+.intro{
+    background: hsl(217, 28%, 15%) url("./images/bg-curvy-desktop.svg") no-repeat;
+    background-position:bottom;
+    background-size: contain;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+}
+.intro-text{
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+    font-size: 18px;
+}
+.intro-text h1{
+    width: 80%;
+    margin: auto;
+    font-size: 30px;
+    padding: 20px;
+}
+.intro-text button, .sign-up button{
+    margin: 20px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    background: linear-gradient(hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+button:hover{
+    background: linear-gradient(hsl(176, 62%, 72%), hsl(198, 71%, 73%));
+    cursor: pointer;
+}
+.features{
+    padding: 10%;
+    background-color: hsl(218, 28%, 13%);
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+}
+.features h2, .productive p{
+    margin: 10px;
+}
+.access, .security, .collab, .any{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+}
+.productive{
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    justify-content: center;
+}
+.prod-text{
+    margin-left: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    width: 40%;
+}
+.prod-text h2, .sign-up h2{
+    margin: 10px;
+    font-size: 30px;
+}
+.highlight{
+    color: rgb(51, 187, 146);
+    text-decoration: underline;
+}
+.prod-text p:last-child:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: aliceblue;
+}
+.reviews{
+    z-index: 0;
+    padding: 10%; 
+    align-items: center;
+    background-color: hsl(218, 28%, 13%);
+    color: aliceblue;
+    display: flex;
+    position: relative;
+}
+.quote{
+    z-index: 0;
+    position: absolute;
+    top: 140px;
+    left: 150px;
+}
+.review-1, .review-2, .review-3{
+    z-index: 1;
+    margin: 30px auto;
+    width: 30%;
+    padding: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(219, 30%, 18%);
+    color: aliceblue;
+}
+.review-1 img, .review-2 img, .review-3 img{
+    margin-right: 20px;
+    width: 50px;
+    border-radius: 100%;
+}
+.name{
+    display: flex;
+    padding-top: 30px;
+}
+.sign-up{
+    margin: auto;
+    width: 60%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px hsl(216, 53%, 9%);
+    padding: 3%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background-color: hsl(217, 28%, 15%);
+    color: aliceblue;
+}
+.sign-up input[type ='email']{
+    margin-top: 20px;
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+footer{
+    margin-top: -5%;
+    padding: 10% 6% 0 6%;
+    background: hsl(216, 53%, 9%);
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo logo logo logo" 
+    "location other-info links socials";
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    grid-area: logo;
+}
+.location, .phone, .email{
+    display: flex;
+    padding: 10px;
+}
+.location{
+    grid-area: location;
+    margin-right: 20px;
+}
+.other-info{
+    grid-area: other-info;
+}
+.location img, .phone img, .email img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.links{
+    display: flex;
+    grid-area: links;
+    text-align: center;
+    margin: auto;
+}
+.first, .second{
+    margin: 0;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+}
+.social-media{
+    grid-area: socials;
+    text-align: center;
+}
+.social-media button {
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px auto 5px;
+    background: none;
+    color: aliceblue;
+    border: 1px solid snow;
+    border-radius: 100%;
+}
+.social-media button:hover{
+    cursor: pointer;
+    color: rgb(51, 187, 146);
+    border-color: rgb(51, 187, 146);
+}
